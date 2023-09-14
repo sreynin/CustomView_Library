@@ -8,7 +8,7 @@
 import UIKit
 
 public class ProfileViewController: UIViewController,Instantiable {
-    static var storyboardName: StringConvertible { StoryboardName.ProfileSB}
+    public static var storyboardName: StringConvertible { StoryboardName.ProfileSB}
     
     public override func viewDidLoad() {
         super.viewDidLoad()

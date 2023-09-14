@@ -8,12 +8,11 @@
 import Foundation
 import UIKit
 
-
-protocol StringConvertible {
+public protocol StringConvertible {
     var rawValue: String {get}
 }
 
-protocol Instantiable: AnyObject {
+public protocol Instantiable: AnyObject {
     static var storyboardName: StringConvertible {get}
 }
 
@@ -32,7 +31,7 @@ extension Instantiable {
 //MARK: -
 
  extension String: StringConvertible { // allow string as storyboard name
-    var rawValue: String {
+     public var rawValue: String {
         return self
     }
 }
