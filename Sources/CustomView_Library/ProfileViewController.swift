@@ -7,19 +7,4 @@
 
 import UIKit
 
-public class ProfileViewController: UIViewController,Instantiable {
-    public static var storyboardName: StringConvertible { StoryboardName.ProfileSB}
-    
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-    public func loadVC()->ProfileViewController{
-        ProfileViewController.instantiateFromStoryboard()
-    }
-
-  
-
-}
+public class ProfileViewController: UIViewController{}

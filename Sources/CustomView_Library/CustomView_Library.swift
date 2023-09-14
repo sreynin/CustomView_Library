@@ -17,9 +17,9 @@ public struct CustomView_Library {
             topViewController.present(alertController, animated: true, completion: nil)
         }
     }
-    public func loadProfileVC()->ProfileViewController {
-      return ProfileViewController.instantiateFromStoryboard()
-        
+    static public func createViewController() -> ProfileViewController {
+        let storyboard = UIStoryboard(name: "ProfileSB", bundle: Bundle.module)
+        return storyboard.instantiateInitialViewController() as! ProfileViewController
     }
 }
 

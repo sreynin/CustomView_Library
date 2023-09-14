@@ -29,7 +29,6 @@ let package = Package(
             ]),
         .testTarget(
             name: "CustomView_LibraryTests",
-            dependencies: ["CustomView_Library"],
-            resources: [.process("CustomView_Library/ProfileSB.storyboard")]),
+            dependencies: ["CustomView_Library"]),
     ]
 )
