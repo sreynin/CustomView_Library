@@ -22,7 +22,7 @@ extension Instantiable {
         return instantiateFromStoryboardHelper()
     }
     
-    private static func instantiateFromStoryboardHelper<T>() -> T {
+    public static func instantiateFromStoryboardHelper<T>() -> T {
         let identifier = String(describing: self)
         let storyboard = UIStoryboard(name: storyboardName.rawValue, bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: identifier) as! T
@@ -31,7 +31,7 @@ extension Instantiable {
 
 //MARK: -
 
-extension String: StringConvertible { // allow string as storyboard name
+ extension String: StringConvertible { // allow string as storyboard name
     var rawValue: String {
         return self
     }
@@ -40,7 +40,7 @@ extension String: StringConvertible { // allow string as storyboard name
 //MARK: -
 
 /** Storing storyboards' names */
-enum StoryboardName: String, StringConvertible {
+public enum StoryboardName: String, StringConvertible {
     case ProfileSB = "ProfileSB"
    
 }

@@ -24,7 +24,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "CustomView_Library",
-            dependencies: []),
+            dependencies: [
+                .product(name: "SDWebImage",package: "SDWebImage")
+            ]),
         .testTarget(
             name: "CustomView_LibraryTests",
             dependencies: ["CustomView_Library"],
