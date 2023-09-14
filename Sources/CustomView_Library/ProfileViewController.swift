@@ -16,6 +16,9 @@ public class ProfileViewController: UIViewController,Instantiable {
         // Do any additional setup after loading the view.
     }
     
+    public func loadVC()->ProfileViewController{
+        ProfileViewController.instantiateFromStoryboard()
+    }
 
   
 
