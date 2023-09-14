@@ -23,7 +23,7 @@ extension Instantiable {
     
     public static func instantiateFromStoryboardHelper<T>() -> T {
         let identifier = String(describing: self)
-        let storyboard = UIStoryboard(name: storyboardName.rawValue, bundle: nil)
+        let storyboard = UIStoryboard(name: storyboardName.rawValue, bundle: Bundle.module)
         return storyboard.instantiateViewController(withIdentifier: identifier) as! T
     }
 }

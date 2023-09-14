@@ -18,8 +18,9 @@ public struct CustomView_Library {
         }
     }
     public static func createViewController() -> ProfileViewController {
-        let storyboard = UIStoryboard(name: "ProfileSB", bundle: Bundle.module)
-        return storyboard.instantiateInitialViewController() as! ProfileViewController
+        //let storyboard = UIStoryboard(name: "ProfileSB", bundle: Bundle.module)
+        //return storyboard.instantiateInitialViewController() as! ProfileViewController
+        return ProfileViewController.instantiateFromStoryboard()
     }
 }
 

@@ -7,4 +7,7 @@
 
 import UIKit
 
-public class ProfileViewController: UIViewController{}
+public class ProfileViewController: UIViewController,Instantiable {
+    public static var storyboardName: StringConvertible { StoryboardName.ProfileSB}
+ 
+}
