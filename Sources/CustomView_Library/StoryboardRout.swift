@@ -40,7 +40,7 @@ extension Instantiable {
 
 /** Storing storyboards' names */
 public enum StoryboardName: String, StringConvertible {
-    case ProfileSB = "ProfileSB"
+    case SettingSB = "SettingSB"
    
 }
 
