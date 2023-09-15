@@ -9,20 +9,27 @@ import UIKit
 import SDWebImage
 public class ProfileViewController: UIViewController,Instantiable {
     public static var storyboardName: StringConvertible { StoryboardName.SettingSB}
- 
+    //MARK: - IBOutlet -
     @IBOutlet weak var editBtn: UIButton!
     @IBOutlet weak var profileImgView: UIImageView!
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var birthTF: UITextField!
     @IBOutlet weak var phoneTF: UITextField!
     @IBOutlet weak var submitBtn: UIButton!
+    
+    //MARK: - View lifeCycle -
     public override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
+    
+    @IBAction func backBtnAction(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
 
-//MARK- Cusotm function -
+//MARK: - Cusotm function -
 extension ProfileViewController {
     func setup(){
         self.editBtn.layer.cornerRadius = 10
