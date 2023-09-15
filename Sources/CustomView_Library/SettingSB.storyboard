@@ -83,7 +83,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHB-3V-VbJ" userLabel="DateView">
                                         <rect key="frame" x="0.0" y="50" width="353" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="please input date of birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="af6-4V-EPy">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="YYYY.MM.DD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="af6-4V-EPy">
                                                 <rect key="frame" x="126" y="0.0" width="227" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="gau-QD-Dyy"/>
@@ -215,9 +215,6 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="submitBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nt2-3R-1fW"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

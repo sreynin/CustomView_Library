@@ -30,7 +30,7 @@ public class ProfileViewController: UIViewController,Instantiable {
     
     @IBAction func submitBtnAction(_ sender: UIButton) {
        
-        CustomView_Library().showAlert(title:"Submit Data", message: "Successfully!🎉🎊"){
+        CustomView_Library().showAlert(title:"Submit data successfully!🎉🎊", message: ""){
             
         }
         
