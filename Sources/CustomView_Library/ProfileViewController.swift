@@ -17,6 +17,7 @@ public class ProfileViewController: UIViewController,Instantiable {
     @IBOutlet weak var phoneTF: UITextField!
     @IBOutlet weak var submitBtn: UIButton!
     
+    
     //MARK: - View lifeCycle -
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,13 @@ public class ProfileViewController: UIViewController,Instantiable {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func submitBtnAction(_ sender: UIButton) {
+        let alertmsg = "Name: \(self.nameTF.text ?? "")\nDate of birth: \(self.birthTF.text ?? "" )\nPhone Number: \(self.phoneTF.text ?? "")"
+        CustomView_Library().showAlert(title:"Submit Data", message: alertmsg){
+            
+        }
+        
+    }
 }
 
 //MARK: - Cusotm function -
