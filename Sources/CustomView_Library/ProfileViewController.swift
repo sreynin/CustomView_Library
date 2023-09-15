@@ -29,8 +29,8 @@ public class ProfileViewController: UIViewController,Instantiable {
     }
     
     @IBAction func submitBtnAction(_ sender: UIButton) {
-        let alertmsg = "Name: \(self.nameTF.text ?? "")\nDate of birth: \(self.birthTF.text ?? "" )\nPhone Number: \(self.phoneTF.text ?? "")"
-        CustomView_Library().showAlert(title:"Submit Data", message: alertmsg){
+       
+        CustomView_Library().showAlert(title:"Submit Data", message: "Successfully!🎉🎊"){
             
         }
         
