@@ -223,9 +223,103 @@
             </objects>
             <point key="canvasLocation" x="116.79389312977099" y="-2.1126760563380285"/>
         </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="ntR-nF-PSd">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="GLh-9k-3I9" customClass="SettingViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5MO-uP-1XI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-1r-Vrc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eY-d0-VLr">
+                                        <rect key="frame" x="155" y="9.5" width="65" height="26"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlT-Jb-fPu">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="Gnw-bk-fS4"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnAction:" destination="GLh-9k-3I9" eventType="touchUpInside" id="OYD-3m-WHf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7eY-d0-VLr" firstAttribute="centerY" secondItem="0Pq-1r-Vrc" secondAttribute="centerY" id="RT4-rb-tFE"/>
+                                    <constraint firstItem="NlT-Jb-fPu" firstAttribute="top" secondItem="0Pq-1r-Vrc" secondAttribute="top" id="ZYb-Ew-ZYJ"/>
+                                    <constraint firstAttribute="height" constant="45" id="ZkA-yU-G6N"/>
+                                    <constraint firstItem="NlT-Jb-fPu" firstAttribute="leading" secondItem="0Pq-1r-Vrc" secondAttribute="leading" id="dHd-4U-q1U"/>
+                                    <constraint firstAttribute="bottom" secondItem="NlT-Jb-fPu" secondAttribute="bottom" id="h7T-H3-MaF"/>
+                                    <constraint firstItem="7eY-d0-VLr" firstAttribute="centerX" secondItem="0Pq-1r-Vrc" secondAttribute="centerX" id="pzS-M7-mwU"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MDi-cF-kvi">
+                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="62" id="5qe-as-5RX">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5qe-as-5RX" id="zzz-9n-YkH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqe-7T-3Zd">
+                                                    <rect key="frame" x="335" y="19" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="AZz-BM-UlQ"/>
+                                                        <constraint firstAttribute="height" constant="24" id="b73-Mz-V32"/>
+                                                    </constraints>
+                                                    <color key="tintColor" red="0.29019607843137252" green="0.29803921568627451" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="icoSeemore"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Pqe-7T-3Zd" firstAttribute="centerY" secondItem="zzz-9n-YkH" secondAttribute="centerY" id="hQj-R5-deQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Pqe-7T-3Zd" secondAttribute="trailing" constant="16" id="i0t-UE-WDa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="GLh-9k-3I9" id="eZ5-AU-kiN"/>
+                                    <outlet property="delegate" destination="GLh-9k-3I9" id="fMp-lY-xXB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ToU-7F-toq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ToU-7F-toq" firstAttribute="bottom" secondItem="MDi-cF-kvi" secondAttribute="bottom" id="I9b-cI-eLK"/>
+                            <constraint firstItem="ToU-7F-toq" firstAttribute="trailing" secondItem="0Pq-1r-Vrc" secondAttribute="trailing" id="JbE-48-eI5"/>
+                            <constraint firstItem="ToU-7F-toq" firstAttribute="trailing" secondItem="MDi-cF-kvi" secondAttribute="trailing" id="OhW-O1-4gY"/>
+                            <constraint firstItem="0Pq-1r-Vrc" firstAttribute="top" secondItem="ToU-7F-toq" secondAttribute="top" id="PLV-p3-hc9"/>
+                            <constraint firstItem="0Pq-1r-Vrc" firstAttribute="leading" secondItem="ToU-7F-toq" secondAttribute="leading" id="SQz-aq-FsS"/>
+                            <constraint firstItem="MDi-cF-kvi" firstAttribute="leading" secondItem="ToU-7F-toq" secondAttribute="leading" id="US3-PK-4Cq"/>
+                            <constraint firstItem="MDi-cF-kvi" firstAttribute="top" secondItem="0Pq-1r-Vrc" secondAttribute="bottom" id="VXS-5c-5aJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jul-yG-3O8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="-11.244377811094454"/>
+        </scene>
     </scenes>
     <resources>
         <image name="TestImage.bmp" width="810" height="810"/>
+        <image name="icoSeemore" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
