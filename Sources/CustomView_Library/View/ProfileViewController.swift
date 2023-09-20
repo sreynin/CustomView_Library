@@ -19,7 +19,9 @@ public class ProfileViewController: UIViewController,Instantiable {
         setup()
     }
     @IBAction func settingBtnAction(_ sender: UIButton) {
-        let vc = CustomView_Library.createSettingViewController(dataSourceStrArr: ["비밀번호 변경","비밀번호 재설정"])
+        let vc = SettingViewController.instantiateFromStoryboard() //CustomView_Library.createSettingViewController(dataSourceStrArr: ["비밀번호 변경","비밀번호 재설정"])
+        vc.dataSource = ["비밀번호 변경","비밀번호 재설정"]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func backBtnAction(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
