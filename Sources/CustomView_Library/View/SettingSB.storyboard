@@ -212,8 +212,6 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h87-Mm-rak" secondAttribute="trailing" id="OKE-mQ-Pn1"/>
                             <constraint firstAttribute="trailing" secondItem="M0R-dq-VSG" secondAttribute="trailing" id="Y4t-Fc-7Uj"/>
                             <constraint firstItem="3aL-Zq-p6t" firstAttribute="top" secondItem="h87-Mm-rak" secondAttribute="bottom" constant="48" id="Y6w-Zh-bFb"/>
-                            <constraint firstItem="M0R-dq-VSG" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="20" id="b74-hQ-oOA"/>
-                            <constraint firstAttribute="bottom" secondItem="M0R-dq-VSG" secondAttribute="bottom" constant="602" id="bS6-iG-7d5"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="n5c-Me-LZE" secondAttribute="trailing" constant="20" id="goM-ia-TPD"/>
                             <constraint firstItem="3aL-Zq-p6t" firstAttribute="centerX" secondItem="h87-Mm-rak" secondAttribute="centerX" id="jTR-Ra-Jne"/>
                             <constraint firstItem="h87-Mm-rak" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tqG-7u-NH1"/>
@@ -231,7 +229,7 @@
         <!--Setting View Controller-->
         <scene sceneID="ntR-nF-PSd">
             <objects>
-                <viewController storyboardIdentifier="SettingViewController" id="GLh-9k-3I9" customClass="SettingViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" id="GLh-9k-3I9" customClass="SettingViewController" customModule="CustomView_Library" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5MO-uP-1XI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
