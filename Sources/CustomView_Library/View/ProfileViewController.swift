@@ -12,7 +12,18 @@ public class ProfileViewController: UIViewController,Instantiable {
     //MARK: - IBOutlet -
   
     @IBOutlet weak var profileImgView: UIImageView!
-
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var dateBirthLbl: UILabel!
+    @IBOutlet weak var phoneNumLbl: UILabel!
+    @IBOutlet weak var addressLbl: UILabel!
+    
+    //MARK: - Variable
+    var imgUrl : String = ""
+    var nameStr: String = ""
+    var datebirthStr: String = ""
+    var phoneNum: String = ""
+    var addressStr: String = ""
+    
     //MARK: - View lifeCycle -
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +43,13 @@ public class ProfileViewController: UIViewController,Instantiable {
 //MARK: - Cusotm function -
 extension ProfileViewController {
     func setup(){
-        self.profileImgView.clipsToBounds = true
+        self.profileImgView.clipsToBounds       = true
         self.profileImgView.layer.cornerRadius  = 70
-        self.profileImgView.sd_setImage(with: URL(string: "https://hips.hearstapps.com/hmg-prod/images/close-up-of-blossoming-rose-flower-royalty-free-image-1580853844.jpg"))
+        self.profileImgView.sd_setImage(with: URL(string: self.imgUrl))
+        self.nameLbl.text       = self.nameStr
+        self.dateBirthLbl.text  = self.datebirthStr
+        self.phoneNumLbl.text   = self.phoneNum
+        self.addressLbl.text    = self.addressStr
     }
+    
 }

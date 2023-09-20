@@ -220,6 +220,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addressLbl" destination="ZfP-3p-IR0" id="0RR-eM-HO5"/>
+                        <outlet property="dateBirthLbl" destination="Hkd-BE-vDY" id="Qff-34-RoW"/>
+                        <outlet property="nameLbl" destination="9N7-lo-maY" id="Qsb-bV-Fo8"/>
+                        <outlet property="phoneNumLbl" destination="bMP-2Z-Hy3" id="kiz-YD-uH9"/>
                         <outlet property="profileImgView" destination="3aL-Zq-p6t" id="5TW-oy-YP8"/>
                     </connections>
                 </viewController>
