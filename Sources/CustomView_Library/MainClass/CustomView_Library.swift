@@ -17,8 +17,10 @@ public struct CustomView_Library {
             topViewController.present(alertController, animated: true, completion: nil)
         }
     }
-    public static func createProfileViewController() -> ProfileViewController {
-        return ProfileViewController.instantiateFromStoryboard()
+    public static func createProfileViewController(profileData : ProfileModel) -> ProfileViewController {
+        let profileVC = ProfileViewController.instantiateFromStoryboard()
+        profileVC.profileData = profileData
+        return profileVC
     }
     public static func createSettingViewController(dataSourceStrArr : [String]) -> SettingViewController {
         let settingVC = SettingViewController.instantiateFromStoryboard()
