@@ -42,7 +42,9 @@ extension SettingViewController :UITableViewDelegate,UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "settingcell", for: indexPath) as! SettingTableViewCell
+        cell.titleLbl.text = dataSource[indexPath.row]
+    return cell
     }
     
     
