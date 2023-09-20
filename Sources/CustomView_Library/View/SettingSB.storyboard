@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -179,6 +178,9 @@
                                         <rect key="frame" x="296.5" y="0.0" width="78.5" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Setting"/>
+                                        <connections>
+                                            <action selector="settingBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aeN-1g-z5E"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -208,7 +210,10 @@
                             <constraint firstItem="n5c-Me-LZE" firstAttribute="top" secondItem="3aL-Zq-p6t" secondAttribute="bottom" constant="23" id="DTi-fQ-p1T"/>
                             <constraint firstItem="h87-Mm-rak" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="FTo-c4-G8o"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h87-Mm-rak" secondAttribute="trailing" id="OKE-mQ-Pn1"/>
+                            <constraint firstAttribute="trailing" secondItem="M0R-dq-VSG" secondAttribute="trailing" id="Y4t-Fc-7Uj"/>
                             <constraint firstItem="3aL-Zq-p6t" firstAttribute="top" secondItem="h87-Mm-rak" secondAttribute="bottom" constant="48" id="Y6w-Zh-bFb"/>
+                            <constraint firstItem="M0R-dq-VSG" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="20" id="b74-hQ-oOA"/>
+                            <constraint firstAttribute="bottom" secondItem="M0R-dq-VSG" secondAttribute="bottom" constant="602" id="bS6-iG-7d5"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="n5c-Me-LZE" secondAttribute="trailing" constant="20" id="goM-ia-TPD"/>
                             <constraint firstItem="3aL-Zq-p6t" firstAttribute="centerX" secondItem="h87-Mm-rak" secondAttribute="centerX" id="jTR-Ra-Jne"/>
                             <constraint firstItem="h87-Mm-rak" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tqG-7u-NH1"/>
