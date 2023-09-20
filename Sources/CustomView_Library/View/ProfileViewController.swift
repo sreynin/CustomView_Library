@@ -18,11 +18,11 @@ public class ProfileViewController: UIViewController,Instantiable {
     @IBOutlet weak var addressLbl: UILabel!
     
     //MARK: - Variable
-    var imgUrl : String = ""
-    var nameStr: String = ""
-    var datebirthStr: String = ""
-    var phoneNum: String = ""
-    var addressStr: String = ""
+    public var imgUrl : String = ""
+    public var nameStr: String = ""
+    public var datebirthStr: String = ""
+    public var phoneNum: String = ""
+    public var addressStr: String = ""
     
     //MARK: - View lifeCycle -
     public override func viewDidLoad() {
@@ -46,7 +46,7 @@ extension ProfileViewController {
         self.profileImgView.clipsToBounds       = true
         self.profileImgView.layer.cornerRadius  = 70
         self.profileImgView.sd_setImage(with: URL(string: self.imgUrl))
-        self.nameLbl.text       = self.nameStr
+        self.nameLbl.text       = self.nameStrpub
         self.dateBirthLbl.text  = self.datebirthStr
         self.phoneNumLbl.text   = self.phoneNum
         self.addressLbl.text    = self.addressStr
