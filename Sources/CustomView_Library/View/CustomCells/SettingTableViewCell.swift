@@ -9,6 +9,7 @@ import UIKit
 
 class SettingTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var detailImgBtn: UIButton!
     @IBOutlet weak var titleLbl: UILabel!
     
 

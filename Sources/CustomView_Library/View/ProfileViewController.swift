@@ -21,6 +21,7 @@ public class ProfileViewController: UIViewController,Instantiable {
     @IBAction func settingBtnAction(_ sender: UIButton) {
         let vc = SettingViewController.instantiateFromStoryboard() 
         vc.dataSource = ["Update Phone Number","View Profile Picture","Edit Address"]
+        vc.detailImg = "icoSeemore"
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func backBtnAction(_ sender: UIButton) {

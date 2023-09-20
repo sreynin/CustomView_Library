@@ -8,8 +8,10 @@
 import UIKit
 
 public class SettingViewController: UIViewController,Instantiable {
+    
     public static var storyboardName: StringConvertible { StoryboardName.SettingSB}
     var dataSource : [String] = []
+    var detailImg : String = ""
     //MARK: - ViewLifeCycle
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -44,6 +46,7 @@ extension SettingViewController :UITableViewDelegate,UITableViewDataSource {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "settingcell", for: indexPath) as! SettingTableViewCell
         cell.titleLbl.text = dataSource[indexPath.row]
+        cell.detailImgBtn.setImage(UIImage(named: self.detailImg), for: .normal)
     return cell
     }
     
