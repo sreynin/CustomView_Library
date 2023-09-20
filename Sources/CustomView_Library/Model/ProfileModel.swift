@@ -8,9 +8,9 @@
 import Foundation
 
 public struct ProfileModel {
-    var imgUrl    : String = ""
-    var name      : String = ""
-    var dateBirth : String = ""
-    var phoneNum  : String = ""
-    var addr      : String = ""
+    public  var imgUrl    : String = ""
+    public  var name      : String = ""
+    public  var dateBirth : String = ""
+    public  var phoneNum  : String = ""
+    public  var addr      : String = ""
 }
