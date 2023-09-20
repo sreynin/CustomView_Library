@@ -7,36 +7,41 @@
 
 import UIKit
 
-class SettingViewController: UIViewController,Instantiable {
+public class SettingViewController: UIViewController,Instantiable {
     public static var storyboardName: StringConvertible { StoryboardName.SettingSB}
     var dataSource : [String] = []
     //MARK: - ViewLifeCycle
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
     }
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    override func viewDidDisappear(_ animated: Bool) {
+    public override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         self.navigationController?.isNavigationBarHidden = false
     }
+    
+    //MARK: - IBAction -
     @IBAction func backBtnAction(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     
 }
-
-//MARK: -
+//MARK: - Custom Funtion
+extension SettingViewController {
+    
+}
+//MARK: -UITableViewDelegate,UITableViewDataSource
 extension SettingViewController :UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.dataSource.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     return UITableViewCell()
     }
     

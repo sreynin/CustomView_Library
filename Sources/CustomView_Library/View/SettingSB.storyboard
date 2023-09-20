@@ -285,8 +285,16 @@
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="icoSeemore"/>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 변경" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kad-cH-4PD">
+                                                    <rect key="frame" x="21" y="20.5" width="93" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Kad-cH-4PD" firstAttribute="leading" secondItem="zzz-9n-YkH" secondAttribute="leading" constant="21" id="Mv5-e9-239"/>
+                                                <constraint firstItem="Kad-cH-4PD" firstAttribute="centerY" secondItem="zzz-9n-YkH" secondAttribute="centerY" id="f29-3B-1JS"/>
                                                 <constraint firstItem="Pqe-7T-3Zd" firstAttribute="centerY" secondItem="zzz-9n-YkH" secondAttribute="centerY" id="hQj-R5-deQ"/>
                                                 <constraint firstAttribute="trailing" secondItem="Pqe-7T-3Zd" secondAttribute="trailing" constant="16" id="i0t-UE-WDa"/>
                                             </constraints>

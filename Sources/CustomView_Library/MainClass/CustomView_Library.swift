@@ -20,6 +20,11 @@ public struct CustomView_Library {
     public static func createProfileViewController() -> ProfileViewController {
         return ProfileViewController.instantiateFromStoryboard()
     }
+    public static func createSettingViewController(dataSourceStrArr : [String]) -> SettingViewController {
+        let settingVC = SettingViewController.instantiateFromStoryboard()
+        settingVC.dataSource = dataSourceStrArr
+        return settingVC
+    }
     public static func createCustomView()-> UIView {
         return customView()
     }
