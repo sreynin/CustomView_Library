@@ -13,5 +13,11 @@ public struct ProfileModel {
       var dateBirth : String = ""
       var phoneNum  : String = ""
       var addr      : String = ""
-    public init() {}
+    public init(imgUrl:String,name:String,dateBirth: String,phoneNum: String,addr: String) {
+        self.imgUrl    = imgUrl
+        self.name      = name
+        self.dateBirth = dateBirth
+        self.phoneNum  = phoneNum
+        self.addr      = addr
+    }
 }
